@@ -1,47 +1,3 @@
-// "use client";
-// import { useState } from "react";
-
-// export default function Home() {
-//   const [input1, setInput1] = useState();
-//   const [input2, setInput2] = useState();
-//   const [result, setResult] = useState(0);
-
-//   // const addNumbers = () => {
-//   //   setResult(Number(input1) + Number(input2));
-//   // };
-
-//   // const submission = () => {
-//   //   setResult(Number(input1) - Number(input2));
-//   // };
-
-//   const onChange = (e) => {
-//     e.target.value;
-//   };
-
-//   return (
-//     <main>
-//       <input
-//         type="number"
-//         value={input1}
-//         onChange={(e) => setInput1(e.target.value)}
-//       />
-
-//       <div className="calculator">
-//         <button onChange={onChange}>1</button>
-//         <button>2</button>
-//         <button>3</button>
-//         <button>4</button>
-//         <button>5</button>
-//         <button>6</button>
-//         <button>7</button>
-//         <button>8</button>
-//         <button>9</button>
-//         <button className="zero">0</button>
-//       </div>
-//     </main>
-//   );
-// }
-
 "use client";
 import { useState } from "react";
 
@@ -55,10 +11,11 @@ export default function Home() {
     //   console.log(setInput1(number + number));
     // }
   };
-  const handleAddition = (symble) => {
-    if (symble === "+") {
-    }
-  };
+  // const handleAddition = (symble, num1, num2) => {
+  //   if (symble === "+") {
+  //     return Number(num1) + Number(num2);
+  //   }
+  // };
   const clear = () => {
     setInput1("");
   };
@@ -88,7 +45,7 @@ export default function Home() {
         <button onClick={() => clear()}>C</button>
 
         <button onClick={() => handleButtonClick("0")}>0</button>
-        <button onClick={() => handleButtonClick("/")}>.</button>
+        <button onClick={() => handleButtonClick(".")}>.</button>
         <button onClick={() => handleButtonClick("/")}>/</button>
         <button className="equal">=</button>
       </div>
